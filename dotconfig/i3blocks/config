@@ -1,0 +1,39 @@
+# i3blocks config - simple & useful
+
+[time]
+label=🕒
+command=date '+%a %d %b %Y | %I:%M:%S %p' 
+interval=1
+
+[cpu]
+label=CPU  
+command=top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4 "%"}'
+interval=5
+
+[mem]
+label=🧠
+command=free -h | awk '/Mem:/ {print $3 "/" $2}'
+interval=5
+
+[disk]
+label=💽
+command=df -h / | awk 'NR==2 {print $3 "/" $2}'
+interval=60
+
+[volume]
+label=🔊
+command=amixer get Master | awk -F'[][]' '/%/ { print $2; exit }'
+interval=1
+signal=1
+
+[net]
+label=📶
+command=ip -4 addr show $(ip route get 1.1.1.1 | awk '{print $5}') | awk '/inet / {print $2}'
+interval=10
+
+[battery]
+label=🔋
+command=acpi -b | cut -d ',' -f 2-
+interval=30
+
+

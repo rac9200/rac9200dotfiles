@@ -1,0 +1,12 @@
+my shitty i3 window manager dotfiles
+
+Distro: arch
+fonts: noto-fonts-emoji noto-fonts noto-fonts-cjk 
+
+list packages:
+pavucontrol pasystray
+picom
+alacritty
+rofi
+arandr
+nwg-look
