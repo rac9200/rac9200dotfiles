@@ -39,10 +39,10 @@ exec --no-startup-id nm-applet
 
 exec --no-startup-id pasystray
 
-#monitor
-exec_always --no-startup-id bash '/home/username/monitors.sh'
-workspace 1 output HDMI-1
-workspace 2 output DP-1
+#monitor if not me then dont
+#exec_always --no-startup-id bash '/home/username/monitors.sh'
+#workspace 1 output HDMI-1
+#workspace 2 output DP-1
 
 exec_always --no-startup-id feh --bg-scale '/home/username/Pictures/vivien.png'
 
