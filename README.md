@@ -1,2 +1,2 @@
-# alternate076dotfiles
+dotfiles
 my shitty dotfiles for i3wm
