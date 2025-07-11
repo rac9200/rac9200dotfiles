@@ -47,7 +47,7 @@ exec --no-startup-id pasystray
 #workspace 1 output HDMI-1
 #workspace 2 output DP-1
 
-exec_always --no-startup-id feh --bg-scale '/home/username/Pictures/vivien.png'
+exec_always --no-startup-id feh --bg-scale '/path/to/wallpaper'
 
 exec --no-startup-id picom
 
