@@ -18,7 +18,7 @@ font pango:monospace 8
 gaps inner 4px
 default_border pixel 2
 
-client.focused          #ff79c6 #bd93f9 #f8f8f2 #50fa7b #bd93f9
+client.focused          #ff00ff #ff00ff #ffffff #ff00ff #ff00ff
 client.unfocused        #44475a #282a36 #6272a4 #44475a #282a36
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
